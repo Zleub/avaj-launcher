@@ -9,3 +9,7 @@ end
 function java
   command docker run --rm -v (pwd):/data -w /data java:7 java $argv
 end
+
+function main
+  command find . -name '*.java' > sources.txt ; javac @sources.txt ; and java -classpath src Simulator $argv
+end
