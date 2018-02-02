@@ -1,3 +1,5 @@
+package fr._42.adebray.simulator;
+
 public class Coordinates {
   private int longitude;
   private int latitude;

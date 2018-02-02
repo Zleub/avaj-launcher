@@ -1,4 +1,6 @@
-class Aircraft {
+package fr._42.adebray.simulator;
+
+public class Aircraft {
   protected long id;
   protected String name;
   protected Coordinates coordinates;

@@ -1,4 +1,6 @@
-class WeatherProvider {
+package fr._42.adebray.simulator;
+
+public class WeatherProvider {
   private static WeatherProvider weatherProvider = new WeatherProvider();
   private static String[] weather = {
     "RAIN", "FOG", "SUN", "SNOW"

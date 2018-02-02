@@ -1,9 +1,11 @@
+package fr._42.adebray.simulator;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-class Simulator {
+public class Simulator {
   public static void main(String[] args) {
     try {
       if (args.length == 1) {

@@ -1,12 +1,15 @@
-public class Helicopter extends Aircraft implements Flyable {
+package fr._42.adebray.simulator;
+
+public class JetPlane extends Aircraft implements Flyable {
   private static java.util.TreeMap<String, int[]> changes;
   private static java.util.TreeMap<String, String> messages;
+
   static {
       changes = new java.util.TreeMap<String, int[]>();
-      changes.put("SUN",  new int[]{ 10, 0,   2 } );
-      changes.put("RAIN", new int[]{  5, 0,   0 } );
-      changes.put("FOG",  new int[]{  1, 0,   0 } );
-      changes.put("SNOW", new int[]{  0, 0, -12 } );
+      changes.put("SUN",  new int[]{ 10, 0,  2 } );
+      changes.put("RAIN", new int[]{  5, 0,  0 } );
+      changes.put("FOG",  new int[]{  1, 0,  0 } );
+      changes.put("SNOW", new int[]{  0, 0, -7 } );
 
       messages = new java.util.TreeMap<String, String>();
       messages.put("SUN",  "Yay, it's sunny again !" );
@@ -17,7 +20,7 @@ public class Helicopter extends Aircraft implements Flyable {
 
   private WeatherTower weatherTower;
 
-  public Helicopter(String name, Coordinates coordinates) {
+  public JetPlane(String name, Coordinates coordinates) {
     super(name, coordinates);
   }
 
@@ -35,6 +38,6 @@ public class Helicopter extends Aircraft implements Flyable {
   }
 
   // public String toString() {
-  //   return "Helicopter";
+  //   return "JetPlane";
   // }
 }

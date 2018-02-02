@@ -1,4 +1,6 @@
-class Tower {
+package fr._42.adebray.simulator;
+
+public class Tower {
   private java.util.Vector<Flyable> observers = new java.util.Vector<Flyable>();
 
   public void register(Flyable flyable) {

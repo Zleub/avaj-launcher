@@ -1,4 +1,6 @@
-class AircraftFactory {
+package fr._42.adebray.simulator;
+
+public class AircraftFactory {
   public static Flyable newAircraft(
     String type,
     String name,
