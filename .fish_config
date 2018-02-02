@@ -3,9 +3,9 @@ function run
 end
 
 function javac
-  command docker run --rm -v (pwd):/data java:7 javac $argv
+  command docker run --rm -v (pwd):/data -w /data java:7 javac $argv
 end
 
 function java
-  command docker run --rm -v (pwd):/data java:7 java $argv
+  command docker run --rm -v (pwd):/data -w /data java:7 java $argv
 end
