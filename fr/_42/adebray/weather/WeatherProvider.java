@@ -1,4 +1,6 @@
-package fr._42.adebray.simulator;
+package fr._42.adebray.weather;
+
+import fr._42.adebray.simulator.Coordinates;
 
 public class WeatherProvider {
   private static WeatherProvider weatherProvider = new WeatherProvider();

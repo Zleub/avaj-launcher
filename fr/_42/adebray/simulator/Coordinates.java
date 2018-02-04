@@ -5,7 +5,7 @@ public class Coordinates {
   private int latitude;
   private int height;
 
-  protected Coordinates(int lo, int la, int h) throws LandingException, NegativeException {
+  public Coordinates(int lo, int la, int h) throws LandingException, NegativeException {
     this.longitude = lo;
     this.latitude = la;
     this.height = h;

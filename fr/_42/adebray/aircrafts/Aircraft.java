@@ -1,4 +1,7 @@
-package fr._42.adebray.simulator;
+package fr._42.adebray.aircrafts;
+
+import fr._42.adebray.simulator.WeatherTower;
+import fr._42.adebray.simulator.Coordinates;
 
 public class Aircraft {
   protected long id;

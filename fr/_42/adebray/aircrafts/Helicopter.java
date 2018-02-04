@@ -1,4 +1,8 @@
-package fr._42.adebray.simulator;
+package fr._42.adebray.aircrafts;
+
+import fr._42.adebray.simulator.Flyable;
+import fr._42.adebray.simulator.WeatherTower;
+import fr._42.adebray.simulator.Coordinates;
 
 public class Helicopter extends Aircraft implements Flyable {
   private static java.util.TreeMap<String, int[]> changes;

@@ -5,6 +5,9 @@ import java.io.FileReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+// import fr._42.adebray.simulator.WeatherTower;
+import fr._42.adebray.aircrafts.AircraftFactory;
+
 public class Simulator {
   public static void main(String[] args) {
     try {
@@ -36,6 +39,7 @@ public class Simulator {
             } catch (NegativeException e) {
               System.out.println("Negative Coordinates for " + m.group(1));
             } catch (Exception e) {
+              System.out.println(e);
               System.out.println("No such Aircraft: " + m.group(1));
             }
           }

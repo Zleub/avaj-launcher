@@ -11,5 +11,7 @@ function java
 end
 
 function main
-  command find . -name '*.java' > sources.txt ; javac -sourcepath @sources.txt ; and java fr._42.adebray.simulator.Simulator $argv
+  command find . -name '*.java' > sources.txt ; \
+    javac -sourcepath . @sources.txt ; \
+    and java fr._42.adebray.simulator.Simulator $argv
 end
